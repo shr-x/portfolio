@@ -1,12 +1,17 @@
-import { FaCodepen, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
-import { SiHashnode } from 'react-icons/si';
+import {
+  FaLinkedinIn,
+  FaTwitter,
+  FaInstagram,
+  FaCodepen,
+  FaDev,
+  FaGithub,
+} from 'react-icons/fa';
 
 import {
   EnvelopeIcon,
+  JournalIcon,
   HeartIcon,
   HomeIcon,
-  JournalIcon,
 } from '../components/svgs';
 
 export const navLinks = [
@@ -18,8 +23,8 @@ export const navLinks = [
   },
   {
     id: 2,
-    name: 'Projects',
-    url: '/projects',
+    name: 'Works',
+    url: '/works',
     svg: <HeartIcon />,
   },
   {
@@ -40,51 +45,36 @@ export const socialMediaLinks = [
   {
     id: 1,
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/angiehentri/',
+    url: 'https://linkedin.com/in/shr-x',
     icon: <FaLinkedinIn />,
     color: 'teal',
   },
   {
     id: 2,
     name: 'Github',
-    url: 'https://github.com/a-sh-dev',
+    url: 'https://github.com/shr-x',
     icon: <FaGithub />,
     color: 'gray',
   },
   {
     id: 3,
-    name: 'X-Twitter',
-    url: 'https://twitter.com/heya_sh',
-    icon: <FaXTwitter />,
+    name: 'Twitter',
+    url: 'https://x.com/_shr_x',
+    icon: <FaTwitter />,
     color: 'blue',
   },
   {
     id: 4,
     name: 'Instagram',
-    url: 'https://www.instagram.com/a_sh.is/',
+    url: 'https://www.instagram.com/_.poojithr_/',
     icon: <FaInstagram />,
     color: 'pink',
-  },
-  {
-    id: 5,
-    name: 'Codepen',
-    url: 'https://codepen.io/angiesh/pens/',
-    icon: <FaCodepen />,
-    color: 'yellow',
-  },
-  {
-    id: 6,
-    name: 'Hashnode',
-    url: 'https://a-sh.hashnode.dev',
-    icon: <SiHashnode />,
-    color: 'purple',
   },
 ];
 
 export const shortSocialLinks = [
   socialMediaLinks[0],
-  socialMediaLinks[1],
   socialMediaLinks[2],
   socialMediaLinks[3],
-  socialMediaLinks[5],
+  socialMediaLinks[1],
 ];

@@ -1,17 +1,14 @@
 import { AppProvider } from '../context';
 import { AppLayout } from '../components/layout';
-import { AnimatePresence } from 'framer-motion';
 import '../../styles/globals.css';
 
-function MyApp({ Component, pageProps, router }) {
+function MyApp({ Component, pageProps }) {
   return (
     <>
       <AppProvider>
-        <AnimatePresence mode="wait">
-          <AppLayout>
-            <Component key={router.route} {...pageProps} />
-          </AppLayout>
-        </AnimatePresence>
+        <AppLayout>
+          <Component {...pageProps} />
+        </AppLayout>
       </AppProvider>
     </>
   );

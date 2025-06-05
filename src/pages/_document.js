@@ -7,11 +7,16 @@ export default class MyDocument extends Document {
     const originalRenderPage = ctx.renderPage;
 
     try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
-        });
+      try {
+        ctx.renderPage = () =>
+          originalRenderPage({
+            enhanceApp: (App) => (props) =>
+              sheet.collectStyles(<App {...props} />),
+          });
+      } catch (e) {
+        // Fallback (noop) if originalRenderPage is not defined or ctx is not as expected.
+        ctx.renderPage = () => {};
+      }
 
       const initialProps = await Document.getInitialProps(ctx);
       return {

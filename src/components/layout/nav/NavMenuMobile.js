@@ -1,14 +1,13 @@
 import Link from 'next/link';
-import { Fragment } from 'react';
-import { GiCoffeePot } from 'react-icons/gi';
-import { HiMusicNote } from 'react-icons/hi';
 import tw, { styled } from 'twin.macro';
 import { SloganSticker } from '../..';
-import { uniformTransition } from '../../../../styles/stylesData';
-import { useAppContext } from '../../../context';
-import { copyright, navLinks } from '../../../data';
-import { currentYear } from '../../../utils';
 import { Em, TextIcon } from '../../typography';
+import { useAppContext } from '../../../context';
+import { currentYear } from '../../../utils';
+import { navLinks, copyright } from '../../../data';
+import { uniformTransition } from '../../../../styles/stylesData';
+import { GiCoffeePot } from 'react-icons/gi';
+import { HiMusicNote } from 'react-icons/hi';
 
 const uniformPadding = tw`p-8`;
 
@@ -27,6 +26,7 @@ const NavMenuWrapper = styled.div(() => [
     border-t-primary-light
     pt-2
   `,
+
   uniformTransition,
 ]);
 
@@ -113,16 +113,17 @@ const NavMenuMobile = () => {
             </TextIcon>
           </Header>
           <NavMenu>
-            {navLinks.map(({ id, name, url, svg }) => {
+            {navLinks.map((navItem) => {
+              const { id, name, url, svg } = navItem;
               return (
-                <Fragment key={id}>
+                <>
                   <Link href={url} passHref>
-                    <NavMobileItem onClick={closeNavMenu}>
+                    <NavMobileItem key={id} onClick={closeNavMenu}>
                       <NavMobileIconWrapper>{svg}</NavMobileIconWrapper>
                       {name}
                     </NavMobileItem>
                   </Link>
-                </Fragment>
+                </>
               );
             })}
           </NavMenu>
@@ -130,13 +131,13 @@ const NavMenuMobile = () => {
             <Copyright className="h-fit">
               <div className="uppercase pr-24">
                 &copy; {currentYear}
-                <span className="em-dash">--------</span>By a-sh.
+                <span className="em-dash">--------</span> By Shr-x.
                 <br /> {copyright.nav}
                 <TextIcon color="teal">
                   <GiCoffeePot aria-hidden="true" />
                 </TextIcon>
               </div>
-              <div className="mt-4 font-normal text-xs tracking-normal">
+              <div className="mt-4 font-normal text-sm tracking-normal">
                 {copyright.siteInfo}
               </div>
             </Copyright>

@@ -1,4 +1,4 @@
-import tw from 'twin.macro';
+import tw, { styled } from 'twin.macro';
 import { LinkButton, SloganSticker } from '..';
 import { GridColumn, GridContainer, Section } from '../layout';
 import { BlockQuote, TextIcon } from '../typography';
@@ -48,13 +48,13 @@ const Quote = () => {
           <GridColumn col="span-10" relative>
             <BlockQuote noMargin>
               I enjoy problem-solving by integrating the visual and technical
-              aspects of achieving purposeful, systematic UI and effective UX in
-              every project.
+              aspects of achieving deliberate, systematic UI and effective UX in
+              every work.
             </BlockQuote>
 
             <SublineWrapper>
               <p>
-                All projects are crafted with care and (powered by lots of)
+                All Works are crafted with care and (powered by lots of)
                 <span className="whitespace-nowrap">
                   {' '}
                   caffeine.
@@ -73,7 +73,7 @@ const Quote = () => {
           </GridColumn>
         </GridContainer>
         <CTA>
-          <LinkButton url="/projects">Projects</LinkButton>
+          <LinkButton url="/works">Works</LinkButton>
         </CTA>
       </Wrapper>
     </Section>

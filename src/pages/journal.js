@@ -1,22 +1,14 @@
+import JournalHeader from '../components/journal/JournalHeader';
+import JournalQuote from '../components/journal/JournalQuote';
+import Container from '../components/layout/Container';
 import { Meta } from '../components';
-import { Container, PageTransition } from '../components/layout';
-import {
-  JournalHeader,
-  JournalList,
-  JournalQuote,
-} from '../components/journal';
 
 export default function Journal() {
   return (
-    <>
+    <Container>
       <Meta title="journal" />
-      <PageTransition>
-        <Container>
-          <JournalHeader />
-          <JournalList />
-          <JournalQuote />
-        </Container>
-      </PageTransition>
-    </>
+      <JournalHeader />
+      <JournalQuote />
+    </Container>
   );
 }

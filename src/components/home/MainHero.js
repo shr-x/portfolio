@@ -73,11 +73,11 @@ const Title = styled.h1(() => [
     font-extrabold
     text-primary-dark
     tracking-tight
-    text-6xl
+    text-5xl
     pb-1
     whitespace-nowrap
-    md:text-8xl
-    xl:text-9xl
+    md:text-7xl
+    xl:text-8xl
   `,
 ]);
 
@@ -177,18 +177,18 @@ const MainHero = () => {
           <Line1>
             <Line />
           </Line1>
-          <Title>I am Angie.</Title>
+          <Title>I am Shreyas.</Title>
           <Line2>
             <Line />
           </Line2>
           <IntroWrapper>
             <Intro>
-              Bridging design and code, I craft user-centric solutions with a
-              decade of visual expertise and empathetic problem-solving.
+            A coding enthusiast who's been immersed in digital realms since his early days, deeply fell in love with crafting web experiences.
+            " Based on Earth. Mentally elsewhere!! " (I was fed up of this trend 😭). This Shows that I'm barely sane, and Mostly caffeinated.
             </Intro>
             <ProfileDesktop>
               <Image
-                src="/images/ash_profile_circle.svg"
+                src="/images/profile.svg"
                 alt="a-sh profile illustration"
                 width={300}
                 height={300}
@@ -218,7 +218,7 @@ const MainHero = () => {
           </div>
           <Profile>
             <Image
-              src="/images/ash_profile_circle.svg"
+              src="/images/profile.svg"
               alt="a-sh profile illustration"
               width={250}
               height={250}
@@ -227,10 +227,7 @@ const MainHero = () => {
               <SloganSticker />
             </SloganWrapper>
           </Profile>
-          <div
-            className="animate-bounce relative -top-40 md:hidden"
-            aria-hidden="true"
-          >
+          <div className="animate-bounce absolute md:hidden" aria-hidden="true">
             <Icon size="xs">
               <HiOutlineArrowSmDown />
             </Icon>

@@ -9,7 +9,7 @@ const Meta = ({ title, keywords, description }) => {
         <meta name="description" content={description} />
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
-        <title>a-sh.{title && ` : ${title}`}</title>
+        <title>Shr-x{title && ` : ${title}`}</title>
       </Head>
     </>
   );
@@ -18,9 +18,9 @@ const Meta = ({ title, keywords, description }) => {
 Meta.defaultProps = {
   title: '',
   keywords:
-    'designer-developer portfolio, front-end developer, melbourne australia, fullstack developer, programmer, a-sh., a-sh-dev, angie sh, angie hentri',
+    'Poojith R, shr-x, personal portfolio, front-end developer, bangalore, india , fullstack developer, programmer, creative developer, personal brand, aesthetic website, indie dev, artistic web design',
   description:
-    'An experienced graphic designer based in Melbourne, Australia who fell in love with coding and is pursuing a front-end developer career.',
+    'A coding enthusiast who`s been immersed in digital realms since his early days, deeply fell in love with crafting web experiences. " Based on Earth. Mentally elsewhere!! " (I was fed up of this trend 😭). This Shows that I`m barely sane, and Mostly caffeinated.',
 };
 
 export default Meta;

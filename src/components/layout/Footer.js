@@ -2,6 +2,7 @@ import Link from 'next/link';
 import tw, { styled } from 'twin.macro';
 import { Container } from '.';
 import { AshLogo } from '../svgs';
+import { AiOutlineSmile } from 'react-icons/ai';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { HiMusicNote, HiOutlineSparkles } from 'react-icons/hi';
 import { Line, Sticker, VLineBg } from '..';
@@ -77,7 +78,6 @@ const Copyright = styled.div(() => [
   tw`
     flex
     items-center
-    gap-2
     justify-center
   `,
 ]);
@@ -175,7 +175,7 @@ const Footer = ({ currentPage }) => {
 
           <Copyright>
             {copyright?.footer}
-            <div className="text-4xl md:text-5xl">
+            <div className="text-7xl md:text-7xl">
               <AshLogo />
             </div>{' '}
             &copy; {currentYear}

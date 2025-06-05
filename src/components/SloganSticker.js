@@ -15,7 +15,7 @@ const StickerWrapper = styled.div(({ lg }) => [
     hover:text-white
     md:(text-9xl p-4)
   `,
-  ({ color = 'pink' }) => bgColorVariants[color],
+  ({ color = 'blue' }) => bgColorVariants[color],
   lg && tw`xl:text-10xl xl:p-5`,
   uniformTransition,
 ]);
@@ -25,7 +25,7 @@ const SloganSticker = ({ color, withLogo, sm, lg }) => {
     <div className={sm && `scale-90`}>
       <StickerWrapper color={color} {...{ lg }}>
         {withLogo && (
-          <AshLogo className="absolute text-5xl md:text-6xl 2xl:text-7xl" />
+          <AshLogo className="absolute text-8xl md:text-9xl 2xl:text-9xl" />
         )}
         <span className="animate-spin-slow">
           <CareRingIcon />

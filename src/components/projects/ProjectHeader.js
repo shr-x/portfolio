@@ -1,6 +1,7 @@
 import tw, { styled } from 'twin.macro';
+import emoji from 'react-easy-emoji';
 import { GridColumn, GridContainer, Header } from '../layout';
-import { BodyIntro, Paragraph, TextIcon } from '../typography';
+import { BodyIntro, Em, Paragraph, TextIcon } from '../typography';
 import { FaRegGrinStars } from 'react-icons/fa';
 import { HeartIcon } from '../svgs';
 import { pagesHeroMax, sectionPaddingB } from '../../../styles/stylesData';
@@ -18,7 +19,7 @@ const ProjectHeader = () => {
     <Wrapper>
       <Header
         title="Selected"
-        subline="Projects"
+        subline="Works"
         sticker="My prreciiouusss~!"
         color="purple"
       >
@@ -27,19 +28,12 @@ const ProjectHeader = () => {
       <GridContainer>
         <GridColumn col="span-9">
           <BodyIntro noMargin variant="bold" size="intro">
-            Once upon a time, building websites for me only involved integrating
-            Adobe Photoshop and{' '}
-            <span className="line-through decoration-primary-dark decoration-2">
-              (Macromedia)
-            </span>{' '}
-            Dreamweaver with a few tweaks of HTML and CSS.
+            My journey has always been about building:
+Whether crafting personal truths with words or dynamic experiences with code.
           </BodyIntro>
 
           <Paragraph>
-            Fast forward to today; the following are some selected projects, not
-            limited to web applications. Each was built from scratch with care
-            (and fueled with lots of caffeine). I look forward to adding more
-            soon!
+          From expressing thoughts in a letter to bringing digital visions to life with Next.js, Tailwind CSS, and Framer Motion, my passion for creation has deepened. Here, you'll discover the fruits of that dedication: my published book, a deeply personal letter, and my custom-built website. It's a continuous exploration, and I'm thrilled to share it with you.
             <TextIcon>
               <FaRegGrinStars aria-hidden="true" />
             </TextIcon>

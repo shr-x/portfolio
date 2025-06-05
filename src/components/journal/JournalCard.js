@@ -6,7 +6,7 @@ import {
   uniformTransition,
 } from '../../../styles/stylesData';
 import { formatDay } from '../../utils';
-import { Tag } from '../typography';
+import { Tag, TextIcon } from '../typography';
 
 const lineFlex = tw`flex items-center gap-2`;
 const toggleReverse = tw`flex-row-reverse md:flex-row`;
@@ -80,8 +80,8 @@ const CardFooter = styled.footer(({ reverse }) => [
 ]);
 
 const JournalCard = ({ journal, reverse }) => {
+  // const { date, day, tag, emoji, code, note } = journal;
   const isReminder = journal?.tag.note === 'reminder';
-  const hasSubNote = !!journal?.subNote;
 
   return (
     <Wrapper color={journal?.tag?.color} className="aspect-square">
@@ -108,11 +108,10 @@ const JournalCard = ({ journal, reverse }) => {
               <div>
                 <Note
                   variant={journal?.tag?.note}
-                  className={!hasSubNote && 'underline'}
+                  className="underline-offset-1"
                 >
                   {journal?.note}
                 </Note>
-                {hasSubNote && <p>{journal.subNote}</p>}
                 {journal?.sub && (
                   <div className="flex items-center gap-x-0.5">
                     <span className="w-4">

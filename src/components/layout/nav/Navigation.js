@@ -15,10 +15,10 @@ const NavWrapper = styled.div(() => [
     sticky
     top-0
     z-50
-    pt-4
-    pb-2
+    pt-2
+    pb-1
     bg-primary-light
-    xl:pt-8
+    xl:pt-1
   `,
   uniformTransition,
 ]);

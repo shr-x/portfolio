@@ -1,4 +1,4 @@
-import { styled } from 'twin.macro';
+import tw, { styled } from 'twin.macro';
 
 const StyledVLine = styled.div`
   display: grid;

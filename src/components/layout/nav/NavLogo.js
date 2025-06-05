@@ -4,7 +4,7 @@ import { AshLogo } from '../../svgs';
 const NavLogo = React.forwardRef(({ onClick, href }, ref) => {
   return (
     <a href={href} onClick={onClick} ref={ref}>
-      <AshLogo />
+      <AshLogo className="text-5xl 2xl:text-8xl" style={{ height: '1.3em' }}/>
     </a>
   );
 });

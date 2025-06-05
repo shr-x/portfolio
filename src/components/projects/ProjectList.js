@@ -1,8 +1,8 @@
-import tw from 'twin.macro';
+import tw, { styled } from 'twin.macro';
 import { Section } from '../layout';
 import ProjectCard from './ProjectCard';
 import { InfoBlurb, SloganSticker } from '..';
-import { projectsData } from '../../data';
+import { worksData } from '../../data';
 
 const SloganWrapper = tw.div`
   hidden
@@ -23,11 +23,11 @@ const ProjectList = () => {
         </SloganWrapper>
       </SloganWrapper>
       <InfoBlurb
-        blurb="Please refer to the project's repository for detailed information."
+        blurb="More Stuff Coming Soon"
         sectPad
       />
       <main className="last:mb-10 mb:last:mb-14 xl:last:mb-20 2xl:last:mb-24">
-        {projectsData.map((project, index) => {
+        {worksData.map((project, index) => {
           let reverse = index % 2 === 0;
           return (
             <ProjectCard key={project.id} project={project} reverse={reverse} />

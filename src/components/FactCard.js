@@ -1,5 +1,6 @@
 import tw, { styled } from 'twin.macro';
 import { Icon } from '.';
+import { HiOutlineSparkles } from 'react-icons/hi';
 import { Heading, Paragraph, TextIcon } from './typography';
 
 const Wrapper = styled.div(() => [

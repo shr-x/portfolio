@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro';
-import { Icon, Table, TableRow } from '..';
+import { Icon, Line, Table, TableRow } from '..';
 import { GridColumn, GridContainer, Section } from '../layout';
 import { Heading, Paragraph, Tag, UList } from '../typography';
 import { HiOutlineCode, HiOutlineColorSwatch } from 'react-icons/hi';
@@ -64,6 +64,11 @@ const Skills = () => {
                   </TableRow>
                 );
               })}
+              <TableRow subtitle="Current Exploration">
+                <Paragraph>
+                I'm currently diving into tuning techniques for my local LLM. I'm focusing on these because they're absolutely crucial for making a general-purpose LLM truly mine—tailoring its responses to my specific workflows and data without the immense computational cost of full retraining. The impact I'm looking for here is about creating a highly personalized and efficient AI assistant that understands my unique context, making it far more useful for automating my tasks and keeping my sensitive data private on my own machine.
+                </Paragraph>
+              </TableRow>
             </Table>
           </GridColumn>
         </GridContainer>

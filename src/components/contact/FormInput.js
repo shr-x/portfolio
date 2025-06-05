@@ -21,7 +21,6 @@ const FormInput = ({
   label,
   errorMessage,
   placeholder,
-  id,
   ...rest
 }) => {
   return (
@@ -29,7 +28,6 @@ const FormInput = ({
       <Input
         onChange={onChange}
         type={type}
-        id={id}
         name={name}
         placeholder={placeholder}
         {...rest}

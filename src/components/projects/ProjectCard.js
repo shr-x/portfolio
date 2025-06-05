@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import tw, { styled } from 'twin.macro';
-import { AHrefButton, TableRow } from '..';
+import { AHrefButton, LinkButton, Table, TableRow } from '..';
 import { paragraphMargin } from '../../../styles/stylesData';
-import { GridContainer } from '../layout';
-import { Paragraph, Tag } from '../typography';
+import { GridColumn, GridContainer } from '../layout';
+import { BodyIntro, Heading, Paragraph, SubHeading, Tag } from '../typography';
 
 const Wrapper = styled.article(() => [
   tw`
@@ -18,6 +18,15 @@ const PicColumn = styled.div(({ reverse }) => [
     md:col-span-6
   `,
   reverse && tw`md:col-start-1 md:row-start-1`,
+]);
+
+const ImageWrapper = styled.div(() => [
+  tw`
+    rounded-2xl
+    overflow-hidden
+    border-4
+    border-primary-dark
+  `,
 ]);
 
 const HeaderColumn = styled.header(({ reverse }) => [
@@ -40,7 +49,7 @@ const Title = styled.h1(() => [
   tw`
     tracking-tight
     font-extrabold
-    text-3xl
+    text-2xl
     // capitalize
     md:text-5xl
     md:mb-4
@@ -107,6 +116,7 @@ const LinkColumn = styled.div(() => [
 const ProjectCard = ({ project, reverse }) => {
   const { category, name, type, desc, stack, repo, url, img } = project;
   const copiedSubtitle = 'main technologies';
+  const isWriting = category.toLowerCase() === 'writings';
 
   return (
     <Wrapper>
@@ -115,40 +125,50 @@ const ProjectCard = ({ project, reverse }) => {
           <Category>{category}</Category>
           <Title>{name}</Title>
           <Type>{type}</Type>
-          <div className="hidden lg:block">
-            <TableRow subtitle={copiedSubtitle}>
-              {stack.map((tech) => {
-                return <Tag key={tech}>{tech}</Tag>;
-              })}
-            </TableRow>
-          </div>
+          {!isWriting && (
+            <div className="hidden lg:block">
+              <TableRow subtitle={copiedSubtitle}>
+                {stack.map((tech) => {
+                  return <Tag key={tech}>{tech}</Tag>;
+                })}
+              </TableRow>
+            </div>
+          )}
         </HeaderColumn>
 
         <PicColumn {...{ reverse }}>
-          <Image
-            src={img}
-            alt={name}
-            layout="responsive"
-            width={1200}
-            height={1160}
-          />
+          <ImageWrapper>
+            <Image
+              src={img}
+              alt={name}
+              layout="responsive"
+              width={1200}
+              height={1160}
+            />
+          </ImageWrapper>
         </PicColumn>
 
         <DescColumn>
-          <TableRow subtitle="About the project" noDashed dense>
+          <TableRow subtitle="About the Work" noDashed dense>
             <Paragraph>{desc}</Paragraph>
           </TableRow>
-          <div className="lg:hidden">
-            <TableRow subtitle={copiedSubtitle}>
-              {stack.map((tech) => {
-                return <Tag key={tech}>{tech}</Tag>;
-              })}
-            </TableRow>
-          </div>
+          {!isWriting && (
+            <div className="lg:hidden">
+              <TableRow subtitle={copiedSubtitle}>
+                {stack.map((tech) => {
+                  return <Tag key={tech}>{tech}</Tag>;
+                })}
+              </TableRow>
+            </div>
+          )}
         </DescColumn>
 
         <LinkColumn>
-          <AHrefButton href={repo}>Repository</AHrefButton>
+          {isWriting ? (
+            <AHrefButton href={`/writings/${repo}`}>Read it</AHrefButton>
+          ) : (
+            <AHrefButton href={repo}>Repository</AHrefButton>
+          )}
           {url && <AHrefButton href={url}>Live</AHrefButton>}
         </LinkColumn>
       </GridContainer>
