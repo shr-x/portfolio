@@ -1,7 +1,7 @@
 {
-  "name": "a-sh-dev_portfolio",
+  "name": "Shr-x-dev_portfolio",
   "private": true,
-  "author": "a-sh-dev",
+  "author": "Shr-x-dev",
   "scripts": {
     "dev": "next dev -p 5007",
     "build": "next build && next export",
