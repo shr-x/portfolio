@@ -32,7 +32,7 @@ const Tldr = () => {
       </HeaderWrapper>
       <GridColumn col="span-10" start="start-md-2">
       <BodyIntro>
-          They said, <em>&quot;Coding is easy-peasy&quot;</em>, Spoiler: it’s not. Seven years in, and I’ve cried over bugs, trauma-bonded with console logs, and built a shrine for Stack Overflow. Still here. Still coding. Still (barely) sane.
+          They said, <em>&quot;Coding is easy-peasy&quot;</em>, Spoiler: it&apos;s not. Seven years in, and I&apos;ve cried over bugs, trauma-bonded with console logs, and built a shrine for Stack Overflow. Still here. Still coding. Still (barely) sane.
         </BodyIntro>
       </GridColumn>
       <GridColumn col="span-5" start="start-md-2">
@@ -48,7 +48,7 @@ const Tldr = () => {
       </GridColumn>
       <GridColumn col="span-5" start="start-7">
         <Paragraph align="justify-xl" smMargin>
-        I don’t just write code — I carve meaning into machines. I build things that speak, move, maybe even heal. I’ll keep learning, keep breaking, and one day, create something that outlives me <Em size="base">( And no, I’m not scared of AI's. Let them try </Em>
+        I don&apos;t just write code — I carve meaning into machines. I build things that speak, move, maybe even heal. I&apos;ll keep learning, keep breaking, and one day, create something that outlives me <Em size="base">( And no, I&apos;m not scared of AI&apos;s. Let them try </Em>
           <TextIcon noMargin>
             <FaRobot aria-hidden="true" />
           </TextIcon>

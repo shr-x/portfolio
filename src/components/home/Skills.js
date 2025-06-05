@@ -66,7 +66,7 @@ const Skills = () => {
               })}
               <TableRow subtitle="Current Exploration">
                 <Paragraph>
-                I'm currently diving into tuning techniques for my local LLM. I'm focusing on these because they're absolutely crucial for making a general-purpose LLM truly mine—tailoring its responses to my specific workflows and data without the immense computational cost of full retraining. The impact I'm looking for here is about creating a highly personalized and efficient AI assistant that understands my unique context, making it far more useful for automating my tasks and keeping my sensitive data private on my own machine.
+                I&apos;m currently diving into tuning techniques for my local LLM. I&apos;m focusing on these because they&apos;re absolutely crucial for making a general-purpose LLM truly mine—tailoring its responses to my specific workflows and data without the immense computational cost of full retraining. The impact I&apos;m looking for here is about creating a highly personalized and efficient AI assistant that understands my unique context, making it far more useful for automating my tasks and keeping my sensitive data private on my own machine.
                 </Paragraph>
               </TableRow>
             </Table>

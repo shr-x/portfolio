@@ -33,7 +33,7 @@ Whether crafting personal truths with words or dynamic experiences with code.
           </BodyIntro>
 
           <Paragraph>
-          From expressing thoughts in a letter to bringing digital visions to life with Next.js, Tailwind CSS, and Framer Motion, my passion for creation has deepened. Here, you'll discover the fruits of that dedication: my published book, a deeply personal letter, and my custom-built website. It's a continuous exploration, and I'm thrilled to share it with you.
+          From expressing thoughts in a letter to bringing digital visions to life with Next.js, Tailwind CSS, and Framer Motion, my passion for creation has deepened. Here, you&apos;ll discover the fruits of that dedication: my published book, a deeply personal letter, and my custom-built website. It&apos;s not just about building things; it&apos;s about creating experiences that matter. Every project is a story, and I&apos;m here to tell them.
             <TextIcon>
               <FaRegGrinStars aria-hidden="true" />
             </TextIcon>

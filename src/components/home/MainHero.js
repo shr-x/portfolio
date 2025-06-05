@@ -183,8 +183,8 @@ const MainHero = () => {
           </Line2>
           <IntroWrapper>
             <Intro>
-            A coding enthusiast who's been immersed in digital realms since his early days, deeply fell in love with crafting web experiences.
-            " Based on Earth. Mentally elsewhere!! " (I was fed up of this trend 😭). This Shows that I'm barely sane, and Mostly caffeinated.
+            A coding enthusiast who&apos;s been immersed in digital realms since his early days, deeply fell in love with crafting web experiences.
+            &quot; Based on Earth. Mentally elsewhere!! &quot; (I was fed up of this trend 😭). This Shows that I&apos;m barely sane, and Mostly caffeinated.
             </Intro>
             <ProfileDesktop>
               <Image
@@ -233,7 +233,7 @@ const MainHero = () => {
             </Icon>
           </div>
           <StickerWrapper>
-            <Sticker text="Is it me you're looking for~?">
+            <Sticker text="Is it me you&apos;re looking for~?">
               <HiMusicNote aria-hidden="true" />
             </Sticker>
           </StickerWrapper>

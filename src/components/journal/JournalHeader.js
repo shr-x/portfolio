@@ -25,7 +25,7 @@ const JournalHeader = () => {
       <GridContainer>
         <div className="col-span-10-8 xl:col-span-11">
           <BodyIntro noMargin variant="bold" size="intro">
-            I'm still working on my journal page. Stay tuned for updates!
+            I&apos;m still working on my journal page. Stay tuned for updates!
           </BodyIntro>
           <Paragraph>
             Meanwhile, feel free to explore the rest of my portfolio.
