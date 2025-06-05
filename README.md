@@ -1,74 +1,96 @@
-# ✨ Personal Portfolio
+# ✨ Shr-x Portfolio
+
+A modern, interactive portfolio website showcasing my work, writings, and journey as a developer. Built with a focus on performance, accessibility, and user experience.
+
+> Live 👉🏻 [**shr-x.cc**](https://shr-x.cc)
+
+## 🌟 Features
+
+- **Interactive Writings**: Dynamic pages for philosophical writings and open letters, with an upcoming interactive flipbook feature
+- **Project Showcase**: A curated collection of projects with detailed descriptions and tech stacks
+- **Responsive Design**: Beautiful and consistent UI across all devices
+- **Dark Mode**: Seamless dark/light mode support
+- **Performance Optimized**: Fast loading times and smooth transitions
+- **SEO Friendly**: Built with Next.js for optimal search engine visibility
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js
+- **Styling**: 
+  - Tailwind CSS
+  - Twin.macro (combining Tailwind with Styled-Components)
+- **Animation**: Framer Motion
+- **Icons**: React Icons
+- **Deployment**: Vercel
+- **Contact Form**: Custom API route with email integration
+
+## 📚 Project Structure
 
 ```
- → version 1.2
+portfolio/
+├── public/          # Static assets
+├── src/
+│   ├── components/  # Reusable UI components
+│   ├── data/        # Content and configuration
+│   ├── pages/       # Next.js pages and API routes
+│   └── styles/      # Global styles and themes
 ```
 
-> [!NOTE]
-> 🚧 _Currently upgrading to version 2 with the latest Next.js & TypeScript._
+## 🚀 Getting Started
 
-This project is the second personal portfolio built since I've begun my coding journey. A revamped of the first one that I built by only using `HTML5` and `SASS`.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/shr-x/portfolio.git
+   ```
 
-<sub> ➡️ [Check the GitHub repo for the first project.](https://github.com/a-sh-dev/T1A2_Portfolio)</sub>
+2. Install dependencies:
+   ```bash
+   cd portfolio
+   yarn install
+   ```
 
-### 🤔 Problem
+3. Run the development server:
+   ```bash
+   yarn dev
+   ```
 
-Using `HTML5` and `SASS` alone is not practical to maintain a scalable portfolio. I need a templating or pattern system that I can utilise as reusable components in the portfolio and enforce a cohesive and consistent look to the UI.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-For styling, I want to experiment using `Tailwind CSS` and utilise the flexibility of `Styled-Components`.
+## 📝 Writings
 
-### 💡 Solution
+The portfolio features a dedicated writings section with:
+- Dynamic routing for each writing
+- Interactive UI elements
+- PDF version requests through Instagram
+- Upcoming interactive flipbook feature
 
-After completing the boot camp, I initially planned to use only `React.js`, but I'm sold by how `Next.js` features a faster and more scalable app due to its server-side rendering capability. `Next.js` is an extension framework of the `React.js` library plus the added SEO friendliness and built-in router improvements. Generally, it's faster due to its server-side rendering functionality, especially for generating static websites.
+## 🎨 Design Philosophy
 
-The most enjoyable learning in this project is creating _design patterns_ → building reusable components, and working on conditional rendering through data iterations for better maintainability. All the UI styling are only made possible (and faster) thanks to `twin.macro`, which significantly assists in blending the best of two worlds between `Tailwind CSS` and `Styled-Components`.
+The portfolio is designed with a minimalist aesthetic, focusing on:
+- Clean typography
+- Thoughtful whitespace
+- Smooth animations
+- Intuitive navigation
+- Consistent visual language
 
-By no means this portfolio is entirely complete. There are many rooms for improvements. But I'm happy to release this version while at the same time working for further development and refinement.
+## 🔜 Upcoming Features
 
-> Live 👉🏻 [**_a-sh.cc_**](https://www.a-sh.cc)
+- [ ] Interactive flipbook for writings
+- [ ] Enhanced project showcases
+- [ ] Blog section
+- [ ] Newsletter integration
+- [ ] More interactive elements
 
-<sub>&darr;   Please check the following known issues and upcoming improvement plans (any help or issues report is much appreciated!). </sub>
+## 🤝 Contact
 
-### ⚙️ Tech Stack & NPM Packages ( & tools )
+Feel free to reach out through:
+- [Instagram](https://instagram.com/_.poojithr_)
+- [GitHub](https://github.com/shr-x)
 
-- Next.js `v12`
-- Tailwind CSS
-- Styled-Components
-- Twin.macro
-- Framer Motion
-- React-icons
-- React-easy-emoji
-- @svgr – for custom svg conversions into functional components
-- Date-fns
-- Axios
-- <s>SendGrid</s> Formspree for contact form integration
-- Vercel for deployment
-- Responsive Viewer chrome extension – an absolute gem!
+## 📄 License
 
-### 💪🏼 Future Improvements
-
-- [ ] Integrating `Sanity` for headless CMS content management
-- [x] Filterable `Journal` cards and `Project` cards
-- [ ] Filterable `Journal` cards for Mobile screens
-- [ ] Filterable `Project` cards (when there are more content)
-- [ ] Individual page for every `Project` with detailed information and more images
-- [x] Page transitions or loading (with `Framer motion`) for additional features and overall UI improvements. Note: I need to upgrade the `Next.js` version so the "exit" page transitions work well.
-- [ ] Branded 404 error page
-- [ ] Accessibility improvements
-- [ ] Typescript integrations
-- [ ] Unit testing integrations
-
-### 🛠 Known Issues
-
-- <s>Due to an unknown problem, I'm currently fixing the `SendGrid` integrated contact form. I tried testing the form submission to the `Next.js` endpoints, yet despite the 200 status delivery reports, I never received any emails in the mailbox. 🥲</s>
-  - After several fix attempts, I finally used the `SendGrid` alternative, `Formspree` (as recommended by [Next](https://vercel.com/guides/deploying-react-forms-using-formspree-with-vercel)). The `SendGrid` contact form finally worked in development, and I could receive the submitted messages. However, unfortunately, it failed on production/deployment (even with neccessary environment variables already added to Vercel's settings, and redeployed). I will investigate further.
-  - Special thanks to _Manu Arora_ ([manuarora700](https://github.com/manuarora700)) for the kind help in trying to solve the `SendGrid` issues! 🙌🏼
-- I tried to animate the heights of the collapsible component on the about me section (on the home page) without any framework. Yet, it has resulted in weird unwanted extra spacing to the remaining content. I may use a third-party package to help with this additional interactivity.
+This project is open source and available under the MIT License.
 
 ---
 
-<sub>This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Built with `Node v16.13.0`, packaged with `Yarn`.</sub>
-
----
-
-<sub>**Crafted with care ❤ (and powered by lots of caffeine ☕️ 🍵 🫖) by a-sh. © Since 2022**</sub>
+<sub>**Crafted with ❤️ by shr-x**</sub>
