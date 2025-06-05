@@ -2,7 +2,7 @@
 
 A modern, interactive portfolio website showcasing my work, writings, and journey as a developer. Built with a focus on performance, accessibility, and user experience.
 
-> Live 👉🏻 [**shr-x.cc**](https://shr-x.cc)
+> Live 👉🏻 [**shr-x.cc**](https://www.shr-x.cc)
 
 ## 🌟 Features
 
