@@ -8,7 +8,7 @@ export const worksData = [
 Built using Next.js, TypeScript, and Tailwind CSS, this site reflects not just what I can do, but why I do it. Every animation, every interaction, is intentional — designed to feel like you're not browsing a website, but decoding a mind.`,
     stack: ['Next.js', 'Tailwind Css', 'MongoDB', 'Framer motion'],
     repo: 'https://github.com/shr-x/portfolio',
-    url: 'https://shr-x.cc',
+    url: 'https://www.shr-x.cc',
     img: '/images/projects/2.png',
   },
   {
